@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ATENDA · Fecha y hora de notas",
+  "version": "1.1.0",
+  "description": "Muestra la fecha y hora de creación junto al autor de las notas de ATENDA.",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mioficina.nl.gob.mx/web/ATENDA/*"
+      ],
+      "js": [
+        "notas.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
